@@ -36,9 +36,15 @@ public function rules()
     return unskipped_elements([
         'name' => 'required|string',
         'email' => 'required|email',
-        'is_active' => $authenticatedUser->canSetActive() ? 'required|boolean' : skip_element(),
-        'is_visible' => $authenticatedUser->canSetVisibility() ? 'required|boolean' : skip_element(),
-        'subscription_ends_at' => $authenticatedUser->canSetSubscriptionExpiry() ? 'required|date' : skip_element(),  
+        'is_active' => $authenticatedUser->canSetActive() 
+            ? 'required|boolean' 
+            : skip_element(),
+        'is_visible' => $authenticatedUser->canSetVisibility() 
+            ? 'required|boolean' 
+            : skip_element(),
+        'subscription_ends_at' => $authenticatedUser->canSetSubscriptionExpiry() 
+            ? 'required|date' 
+            : skip_element(),  
     ]);
 
 }
