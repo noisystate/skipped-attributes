@@ -1,0 +1,23 @@
+{
+    "name": "noisystate/skipped-elements",
+    "description": "A simple package to define arrays with optional keys in an elegant way",
+    "autoload": {
+        "psr-4": {
+            "Noisystate\\SkippedElements\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "authors": [
+        {
+            "name": "Mohamed A Younes",
+            "email": "devmhmdyounes@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    }
+}
