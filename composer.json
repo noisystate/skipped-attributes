@@ -1,9 +1,9 @@
 {
-    "name": "noisystate/skipped-elements",
-    "description": "A simple package to define arrays with optional keys in an elegant way",
+    "name": "noisystate/skipped-attributes",
+    "description": "A simple package to define arrays with optional attributes in an elegant way",
     "autoload": {
         "psr-4": {
-            "Noisystate\\SkippedElements\\": "src/"
+            "Noisystate\\SkippedAttributes\\": "src/"
         },
         "files": [
             "src/helpers.php"

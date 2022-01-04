@@ -1,18 +1,18 @@
 <?php
 
-use Noisystate\SkippedElements\SkippedElement;
-use Noisystate\SkippedElements\UnskippedElements;
+use Noisystate\SkippedAttributes\SkippedAttribute;
+use Noisystate\SkippedAttributes\UnskippedAttributes;
 
-if (!function_exists('skip_element')) {
-    function skip_element()
+if (!function_exists('skip_attribute')) {
+    function skip_attribute()
     {
-        return new SkippedElement();
+        return new SkippedAttribute();
     }
 }
 
-if (!function_exists('unskipped_elements')) {
-    function unskipped_elements(array $array)
+if (!function_exists('unskipped_attributes')) {
+    function unskipped_attributes(array $array)
     {
-        return UnskippedElements::from($array)->all();
+        return UnskippedAttributes::from($array)->all();
     }
 }

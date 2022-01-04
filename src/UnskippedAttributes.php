@@ -1,8 +1,8 @@
 <?php
 
-namespace Noisystate\SkippedElements;
+namespace Noisystate\SkippedAttributes;
 
-class UnskippedElements
+class UnskippedAttributes
 {
     private $array;
 
@@ -19,7 +19,7 @@ class UnskippedElements
     public function all()
     {
         return array_filter($this->array, function ($element) {
-            return !$element instanceof SkippedElement;
+            return !$element instanceof SkippedAttribute;
         });
     }
 }
